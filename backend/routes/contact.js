@@ -34,7 +34,7 @@ router.post('/', contactLimiter, validateContact, async (req, res) => {
     // Email to Deepanshu
     transporter.sendMail({
       from: '"Deepanshu Kumar" <work.deepanshukumar@gmail.com>',
-      to: process.env.EMAIL_USER,
+      to: 'work.deepanshukumar@gmail.com',
       subject: `Portfolio Contact - ${subject}`,
       html: `
     <h2>New Portfolio Contact Message</h2>
