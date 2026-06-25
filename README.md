@@ -5,7 +5,6 @@
 [![Live Portfolio](https://img.shields.io/badge/%F0%9F%8C%90_Live_Portfolio-Visit_Now-6d9ef7?style=for-the-badge)](https://deepanshu-kumar-portfolio.netlify.app/)[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/deepanshu-kumar-5604b1239/)[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github)](https://github.com/deepanshu-ku-17)
 
 </div>
----
 
   ## About
 
