@@ -40,7 +40,19 @@ router.post('/', contactLimiter, validateContact, async (req, res) => {
     sendMail({
       to: email,
       subject: "Thanks for Reaching Out | Deepanshu Kumar",
-      html: `<h2>Thank You for Getting in Touch 🚀</h2><p>Hi ${name},</p><p>I received your message and will get back to you within 24-48 hours.</p><br/><p>Best Regards,<br/><strong>Deepanshu Kumar</strong><br/>MERN Stack Developer</p>`,
+      html: `<h2>Thank You for Getting in Touch 🚀</h2>
+      <p>Hi ${name},</p>
+      <p>Thank you for reaching out through my portfolio website. I have successfully received your message and truly appreciate your interest.</p>
+      <br/>
+      <p>I will review your inquiry and get back to you as soon as possible, usually within 24–48 hours.</p>
+      <br/>
+      <p>In the meantime, feel free to explore my work and connect with me on LinkedIn or GitHub to learn more about my projects and experience.</p>
+      <br/>
+      <p>Looking forward to connecting with you.</p>
+      <br/>
+      <p>Best Regards,<br/>
+      <strong>Deepanshu Kumar</strong><br/>
+      MERN Stack Developer</p>`,
     }).catch(err => console.error('Visitor mail failed:', err.message))
 
     res.status(201).json({ success: true, message: 'Message received. Thank you!', id: contact._id })
