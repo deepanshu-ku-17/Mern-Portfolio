@@ -43,11 +43,8 @@ router.post('/', contactLimiter, validateContact, async (req, res) => {
       html: `<h2>Thank You for Getting in Touch 🚀</h2>
       <p>Hi ${name},</p>
       <p>Thank you for reaching out through my portfolio website. I have successfully received your message and truly appreciate your interest.</p>
-      <br/>
       <p>I will review your inquiry and get back to you as soon as possible, usually within 24–48 hours.</p>
-      <br/>
       <p>In the meantime, feel free to explore my work and connect with me on LinkedIn or GitHub to learn more about my projects and experience.</p>
-      <br/>
       <p>Looking forward to connecting with you.</p>
       <br/>
       <p>Best Regards,<br/>
