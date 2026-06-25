@@ -6,7 +6,7 @@
 
 </div> ---
 
- ---## About
+  ## About
 
 Production-grade MERN stack developer portfolio with a premium glassmorphism UI, real-time GitHub integration, contact form with email notifications, resume download tracking, image uploads via Cloudinary, and a protected admin dashboard.
 
