@@ -33,7 +33,7 @@ router.post('/', contactLimiter, validateContact, async (req, res) => {
     const contact = await Contact.create({ name, email, subject, message, ip })
     // Email to Deepanshu
     transporter.sendMail({
-      from: process.env.EMAIL_USER,
+      from: '"Deepanshu Kumar" <work.deepanshukumar@gmail.com>',
       to: process.env.EMAIL_USER,
       subject: `Portfolio Contact - ${subject}`,
       html: `
@@ -50,7 +50,7 @@ router.post('/', contactLimiter, validateContact, async (req, res) => {
 
     // Auto Reply to Visitor
     transporter.sendMail({
-      from: process.env.EMAIL_USER,
+      from: '"Deepanshu Kumar" <work.deepanshukumar@gmail.com>',
       to: email,
       subject: "Thanks for Reaching Out | Deepanshu Kumar",
       html: `
