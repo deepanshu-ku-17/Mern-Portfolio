@@ -5,7 +5,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 
 import Portfolio from "./pages/Portfolio";
-import AdminProtectedRoute from "./components/AdminProtectedRoute";
 
 const AdminDashboard = lazy(() => import("./pages/AdminDashboard"));
 
@@ -16,16 +15,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Routes>
           <Route path="/" element={<Portfolio />} />
 
-          <Route
-            path="/admin"
-            element={
-              <AdminProtectedRoute>
-                <AdminDashboard />
-              </AdminProtectedRoute>
-            }
-          />
+          <Route path="/admin" element={<AdminDashboard />} />
         </Routes>
       </Suspense>
     </BrowserRouter>
-  </React.StrictMode>
+  </React.StrictMode>,
 );
